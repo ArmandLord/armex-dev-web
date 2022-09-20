@@ -7,7 +7,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
+  // TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
@@ -126,7 +126,7 @@ function Newsletter() {
           placeholder="Email address"
           aria-label="Email address"
           required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-sky-500 focus:outline-none focus:ring-4 focus:ring-sky-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-sky-400 dark:focus:ring-sky-400/10 sm:text-sm"
         />
         <Button type="submit" className="ml-4 flex-none">
           Join
@@ -250,45 +250,47 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
-        </title>
+        <title>Armex | Dev | Web</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Armex somos un equipo de desarrolladores distribuidos en varias
+          partes del mundo dispuestos a compartir nuestro conocimiento
+          contigo."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Armex (Development Team).
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            Armex somos un equipo de desarrolladores distribuidos en varias
+            partes del mundo dispuestos a compartir nuestro conocimiento
+            contigo.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://instagram.com"
+              href="https://instagram.com/team_armex?igshid=YzA2ZDJiZGQ="
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
+              target="_blanck"
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/ArmandLord"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
+              target="_blanck"
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/jos%C3%A9-armando-p%C3%A9rez/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+              target="_blanck"
             />
           </div>
         </div>

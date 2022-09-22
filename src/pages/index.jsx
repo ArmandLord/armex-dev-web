@@ -27,6 +27,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import { AiTwotoneTrophy } from 'react-icons/ai'
+import { GiThorHammer, GiAmericanShield } from 'react-icons/gi'
 
 function MailIcon(props) {
   return (
@@ -347,10 +348,44 @@ export default function Home({ articles }) {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
+          <div className="flex flex-col gap-8">
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <div className="flex">
+              <h3 className="pr-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+                ¡Surgió una idea!
+              </h3>
+              <GiThorHammer className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl" />
+              {/* <GiAmericanShield className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl" /> */}
+            </div>
+            <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
+              Voluptatum iure animi eos rerum tempora accusantium recusandae.
+              Iure repellat cumque eum?
+            </p>
+            <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
+              Voluptatum iure animi eos rerum tempora accusantium recusandae.
+              Iure repellat cumque eum?
+            </p>
+            <h4 className="text-1xl pr-4 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+              ¿Cuál es tu siguiente paso?
+            </h4>
+            <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
+              Voluptatum iure animi eos rerum tempora accusantium recusandae.
+              Iure repellat cumque eum?
+            </p>
+            <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
+              Voluptatum iure animi eos rerum tempora accusantium recusandae.
+              Iure repellat cumque eum?
+            </p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />

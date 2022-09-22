@@ -28,6 +28,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import { AiTwotoneTrophy } from 'react-icons/ai'
 import { GiThorHammer, GiAmericanShield } from 'react-icons/gi'
+import { motion } from 'framer-motion'
 
 function MailIcon(props) {
   return (
@@ -276,7 +277,10 @@ function Photos() {
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
+          <motion.div
+            // efecto de rebote en el hover
+            whileHover={{ scale: 1.05, rotate: 4 }}
+            whileTap={{ scale: 0.95 }}
             key={image.src}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
@@ -289,7 +293,7 @@ function Photos() {
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -304,19 +308,19 @@ export default function Home({ articles }) {
         <meta
           name="description"
           content="Armex somos un equipo de desarrolladores distribuidos en varias
-          partes del mundo dispuestos a compartir nuestro conocimiento
+          partes del mundo dispuestos a compartir nuestro conocimiento y experiencia
           contigo."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Armex (Development Team).
+            Armex | Development Team
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Armex somos un equipo de desarrolladores distribuidos en varias
-            partes del mundo dispuestos a compartir nuestro conocimiento
-            contigo.
+            partes del mundo dispuestos a compartir nuestro conocimiento y
+            experiencia contigo.
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
@@ -372,7 +376,7 @@ export default function Home({ articles }) {
               Iure repellat cumque eum?
             </p>
             <h4 className="text-1xl pr-4 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
-              ¿Cuál es tu siguiente paso?
+              ¿Cuál es el siguiente paso?
             </h4>
             <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe

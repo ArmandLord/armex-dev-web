@@ -6,9 +6,15 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import Link from 'next/link'
 import { IoLogoJavascript } from 'react-icons/io'
 import { FaVuejs } from 'react-icons/fa'
+import { SiReact } from 'react-icons/si'
 // import { formatDate } from '@/lib/formatDate'
 
 function Article({ article }) {
+  const icons = {
+    javascript: <IoLogoJavascript />,
+    vue: <FaVuejs />,
+    react: <SiReact />,
+  }
   return (
     <article className="md:grid md:grid-cols-2 md:items-baseline">
       {/* <Card className="md:col-span-3">
@@ -28,7 +34,7 @@ function Article({ article }) {
             className={`flex h-12 w-full flex-row-reverse rounded-tr-3xl rounded-tl-3xl py-3 px-6 text-2xl`}
             style={{ backgroundColor: article.background }}
           >
-            {article.icon === 'javascript' ? <IoLogoJavascript /> : <FaVuejs />}
+            {icons[article.icon]}
           </div>
         ) : null}
         <div className=" w-full p-6">
@@ -58,9 +64,11 @@ export default function ArticlesIndex({ articles }) {
         intro="Si quieres contribuir con el desarrollo de la comunidad, puedes escribir un artículo y compartirlo con nosotros."
       >
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
-          {articles.map((article) => (
-            <Article key={article.slug} article={article} />
-          ))}
+          {
+            articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))[0]
+          }
         </div>
       </SimpleLayout>
     </>

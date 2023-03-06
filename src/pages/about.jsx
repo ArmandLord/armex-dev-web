@@ -59,36 +59,41 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              ¿Qué es Armex?
+              ¿Qué nos motiva?
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores rerum voluptatem et. Obcaecati suscipit molestiae
-                blanditiis optio voluptate accusamus accusantium eum
-                voluptatibus beatae mollitia! Alias sed voluptatem quam ipsum
-                sit?
+                Compartir conocimientos es uno de los aspectos más importantes
+                para el crecimiento personal y profesional en cualquier área, y
+                el desarrollo web no es una excepción. Es una disciplina en
+                constante evolución, en la que nuevas tecnologías y herramientas
+                surgen a diario, y la colaboración entre profesionales es
+                fundamental para estar actualizados y mejorar nuestras
+                habilidades.
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores rerum voluptatem et. Obcaecati suscipit molestiae
-                blanditiis optio voluptate accusamus accusantium eum
-                voluptatibus beatae mollitia! Alias sed voluptatem quam ipsum
-                sit?
+                Es por eso que en esta página web, nuestra meta es crear
+                recursos escritos que ayuden a aquellos que desean adentrarse en
+                el mundo del desarrollo web, ofreciendo información clara y
+                accesible sobre las distintas tecnologías y conceptos relevantes
+                en esta área.
+              </p>
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+                Nuestro objetivo
+              </h2>
+              <p>
+                Nos hemos dado cuenta de que muchas personas, tanto
+                principiantes como aquellos con más experiencia, encuentran
+                dificultades al intentar aprender nuevas tecnologías o enfrentar
+                problemas en su trabajo diario. Por eso, queremos ofrecer una
+                solución a través de recursos educativos escritos que sean
+                útiles para todos.
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores rerum voluptatem et. Obcaecati suscipit molestiae
-                blanditiis optio voluptate accusamus accusantium eum
-                voluptatibus beatae mollitia! Alias sed voluptatem quam ipsum
-                sit?
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores rerum voluptatem et. Obcaecati suscipit molestiae
-                blanditiis optio voluptate accusamus accusantium eum
-                voluptatibus beatae mollitia! Alias sed voluptatem quam ipsum
-                sit?
+                Nuestro objetivo es crear una comunidad que fomente la
+                colaboración y el intercambio de conocimientos, donde podamos
+                aprender unos de otros y crecer juntos. Si quieres formar parte
+                de este desafío no dudes en escribirnos. 🚀
               </p>
             </div>
           </div>

@@ -56,6 +56,7 @@ export default function About() {
               transition={{ type: 'spring', stiffness: 100 }}
             >
               <Image
+                priority
                 src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"

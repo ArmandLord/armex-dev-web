@@ -358,37 +358,38 @@ export default function Home({ articles }) {
             ))} */}
             <div className="flex">
               <h3 className="pr-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-                ¡Surgió una idea!
+                ¡Bienvenidos a nuestro sitio web!
               </h3>
-              <GiThorHammer className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl" />
+              {/* <GiThorHammer className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl" /> */}
               {/* <GiAmericanShield className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl" /> */}
             </div>
             <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
-              Voluptatum iure animi eos rerum tempora accusantium recusandae.
-              Iure repellat cumque eum?
+              Somos un equipo de desarrolladores apasionados por el mundo del
+              software y queremos compartir nuestros conocimientos y
+              experiencias contigo.
             </p>
             <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
-              Voluptatum iure animi eos rerum tempora accusantium recusandae.
-              Iure repellat cumque eum?
+              Como equipo, trabajamos en diversos proyectos de software y hemos
+              adquirido una amplia gama de habilidades y conocimientos en el
+              proceso. Desde el desarrollo de aplicaciones enfocadas al usuario
+              hasta la creación de sistemas de gestión de bases de datos.
+            </p>
+            <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
+              Por eso estamos tan emocionados de compartir nuestras ideas y
+              técnicas con la comunidad.
             </p>
             <h4 className="text-1xl pr-4 font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
               ¿Cuál es el siguiente paso?
             </h4>
             <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
-              Voluptatum iure animi eos rerum tempora accusantium recusandae.
-              Iure repellat cumque eum?
+              Creemos que compartir conocimientos y colaborar es esencial para
+              el crecimiento y desarrollo de la comunidad de desarrolladores.
+              Por lo tanto, invitamos a todos los interesados a unirse y
+              contribuir con sus propias ideas y perspectivas.
             </p>
             <p className="text-justify text-base text-zinc-600 dark:text-zinc-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolores eveniet rerum tempora vel cum repudiandae aut aliquam.
-              Voluptatum iure animi eos rerum tempora accusantium recusandae.
-              Iure repellat cumque eum?
+              ¡Esperamos que encuentres nuestro contenido útil e inspirador! Si
+              tienes alguna sugerencia o pregunta, no dudes en contactarnos.
             </p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">

@@ -60,6 +60,7 @@ export function ArticleLayout({
                 {/* Agregar un divider con un gris clarito */}
                 <div className="mt-2 h-0.5 w-full bg-zinc-200 dark:bg-zinc-500" />
                 {/* agrega una imagen pequeña circular y a un lado un nombre */}
+                <br />
                 <div className="mt-2 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
                   <Image
                     // hacerla mas pequeña
@@ -69,7 +70,9 @@ export function ArticleLayout({
                     alt="armandev"
                     className="h-[10px] w-[10px] rounded-full"
                   />
-                  <span className="ml-2">Escrito por Armandev</span>
+                  <span className="ml-2">
+                    José Armando Pérez Pérez (Armandev)
+                  </span>
                 </div>
                 <time
                   dateTime={meta.date}

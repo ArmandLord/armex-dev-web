@@ -5,6 +5,9 @@ import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
 
+import portraitImage from '@/images/armex-about.png'
+import Image from 'next/image'
+
 function ArrowLeftIcon(props) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
@@ -54,6 +57,20 @@ export function ArticleLayout({
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                   {meta.title}
                 </h1>
+                {/* Agregar un divider con un gris clarito */}
+                <div className="mt-2 h-0.5 w-full bg-zinc-200 dark:bg-zinc-500" />
+                {/* agrega una imagen pequeña circular y a un lado un nombre */}
+                <div className="mt-2 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
+                  <Image
+                    // hacerla mas pequeña
+                    height={40}
+                    width={40}
+                    src={portraitImage}
+                    alt="armandev"
+                    className="h-[10px] w-[10px] rounded-full"
+                  />
+                  <span className="ml-2">Escrito por Armandev</span>
+                </div>
                 <time
                   dateTime={meta.date}
                   className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"

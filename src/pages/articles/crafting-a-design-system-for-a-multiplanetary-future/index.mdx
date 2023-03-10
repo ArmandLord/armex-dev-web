@@ -15,7 +15,13 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
+Si eres un desarrollador de React, es posible que hayas oído hablar del hook useContext, y es probable que hayas utilizado este hook en algunas ocasiones. Sin embargo, puede que aún te preguntes cuándo es el momento adecuado para utilizar el hook useContext en tu aplicación.
+
+En primer lugar, es importante entender que el hook useContext se utiliza para compartir datos entre componentes sin tener que pasarlos a través de props. Esto significa que si tienes datos que necesitas utilizar en varios componentes diferentes, el hook useContext podría ser una buena opción para compartir esos datos de manera eficiente.
+
+Por ejemplo, si tienes un tema que se aplica a varios componentes diferentes en tu aplicación, puedes utilizar el hook useContext para pasar ese tema desde un componente principal a todos los componentes secundarios que lo necesiten. De esta manera, no tendrás que pasar el tema a través de las props de cada componente, lo que puede ser un poco tedioso y complicado.
+
+Otro caso en el que puede ser útil utilizar el hook useContext es cuando necesitas acceder a datos que están "más arriba" en el árbol de componentes. Si tienes varios componentes anidados unos dentro de otros y necesitas acceder a datos que se encuentran en uno de los componentes más arriba del árbol, puedes utilizar el hook useContext para acceder a esos datos sin tener que pasarlos a través de props.
 
 <Image src={designSystem} alt="" />
 

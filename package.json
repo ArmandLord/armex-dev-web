@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:unit": "jest /test/unit/",
-    "test:cov": "jest --coverage /test/unit/"
+    "test:cov": "jest --coverage"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {

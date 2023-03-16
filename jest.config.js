@@ -8,7 +8,6 @@ const customJestConfig = {
   testMatch: ['**/*.spec.js', '**/*.spec.jsx'],
   // setupFilesAfterEnv: ['<rootDir>/jest-setup-after-env.ts'],
   verbose: true,
-  rootDir: 'test',
   roots: [
     '<rootDir>',
   ],
@@ -18,17 +17,22 @@ const customJestConfig = {
     AbortSignal: global.AbortSignal,
   },
   moduleNameMapper: {
-    '@/components/(.*)': '@next/font/$1',
+    '@/components/(.*)': '<rootDir>/src/$1',
   },
   collectCoverage: true,
   coverageThreshold: {
-   global: {
-   branches: 80,
-   functions: 80,
-   lines: 80,
-   statements: 80
-   }
+    'src/**/*.{js,jsx}': {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80
+    }
   },
+  collectCoverageFrom: [
+    'src/**/*.(js|jsx)',
+    '!src/images/**',
+    '!src/styles/**',
+  ]
 }
 
 // createJestConfig is exported in this way to ensure that next/jest can load the Next.js config which is async

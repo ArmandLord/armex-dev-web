@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test:unit": "jest /test/unit/",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "cy:run": "cypress run --headed --no-exit",
+    "test:e2e": "concurrently -k -s first \"npm run dev\" \"npm run cy:run\""
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -20,6 +22,7 @@
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
     "clsx": "^1.2.0",
+    "cypress": "^12.8.1",
     "fast-glob": "^3.2.11",
     "feed": "^4.2.2",
     "focus-visible": "^5.2.0",

@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test:unit": "jest /test/unit/",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "cy:run": "cypress run --headed --no-exit",
+    "test:e2e": "concurrently -k -s first \"npm run dev\" \"npm run cy:run\""
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "cypress": "^12.8.1",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.5",
     "jest": "^29.5.0",

@@ -33,6 +33,8 @@ export function ArticleLayout({
     return children
   }
 
+  console.log(meta)
+
   return (
     <>
       <Head>
@@ -66,7 +68,7 @@ export function ArticleLayout({
                     // hacerla mas pequeña
                     height={40}
                     width={40}
-                    src={portraitImage}
+                    src={meta.img_profile}
                     alt="armandev"
                     className="h-[10px] w-[10px] rounded-full"
                   />

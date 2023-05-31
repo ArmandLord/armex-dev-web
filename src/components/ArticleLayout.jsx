@@ -80,6 +80,18 @@ export function ArticleLayout({
                 </time>
               </header>
               <Prose className="mt-8">{children}</Prose>
+              <div>
+                <div className="flex justify-start">
+                  <button
+                    type="button"
+                    onClick={() => router.back()}
+                    aria-label="Go back to articles"
+                    className="rounded bg-zinc-800 py-2 px-4 text-xs font-bold text-white hover:bg-zinc-700"
+                  >
+                    Regresar
+                  </button>
+                </div>
+              </div>
             </article>
           </div>
         </div>

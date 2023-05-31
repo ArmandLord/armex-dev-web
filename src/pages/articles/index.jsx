@@ -64,11 +64,9 @@ export default function ArticlesIndex({ articles }) {
         intro="Si quieres contribuir con el desarrollo de la comunidad, puedes escribir un artículo y compartirlo con nosotros."
       >
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
-          {
-            articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))[0]
-          }
+          {articles
+            .map((article) => <Article key={article.slug} article={article} />)
+            .slice(0, 2)}
         </div>
       </SimpleLayout>
     </>

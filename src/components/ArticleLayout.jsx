@@ -33,8 +33,6 @@ export function ArticleLayout({
     return children
   }
 
-  console.log(meta)
-
   return (
     <>
       <Head>
@@ -59,13 +57,10 @@ export function ArticleLayout({
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                   {meta.title}
                 </h1>
-                {/* Agregar un divider con un gris clarito */}
                 <div className="mt-2 h-0.5 w-full bg-zinc-200 dark:bg-zinc-500" />
-                {/* agrega una imagen pequeña circular y a un lado un nombre */}
                 <br />
                 <div className="mt-2 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
                   <Image
-                    // hacerla mas pequeña
                     height={40}
                     width={40}
                     src={meta.img_profile}

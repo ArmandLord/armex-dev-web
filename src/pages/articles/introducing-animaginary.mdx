@@ -1,103 +1,81 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import imgProfile from '@/images/armandev.jpg'
 
 export const meta = {
-  author: 'Adam Wathan',
-  date: '2022-09-02',
-  title: 'Introducing Animaginary: High performance web animations',
-  background: 'rgb(132 204 22)',
-  icon: 'vue',
+  author: 'José Armando Pérez Pérez',
+  date: '2023-05-10',
+  title:
+    'Garantiza la integridad de los datos en tus componentes utilizando PropTypes',
+  background: 'rgb(130 215 247)',
+  icon: 'react',
   description:
-    'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+    'Detección temprana de errores: PropTypes permite definir los tipos esperados de las props en tus componentes. Al especificar los PropTypes adecuados, puedes detectar errores de tipo tempranamente durante el desarrollo.',
+  img_profile: imgProfile,
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.
+## PropTypes la mejor forma de validar tus props
 
-To make this possible, we needed to squeeze every drop of performance out of the browser possible. And so Animaginary was born.
+Al utilizar PropTypes, puedes garantizar que las props recibidas en tus componentes cumplen con las expectativas y que los datos se manejan correctamente. Esto contribuye a mejorar la calidad y confiabilidad de tu código, evitando errores y facilitando el mantenimiento de tus componentes.
+
+## ¿Cómo utilizar PropTypes?
+
+1. Instalar el paquete prop-types: Si aún no tienes instalado prop-types, puedes instalarlo utilizando npm o yarn. Abre tu terminal y ejecuta uno de los siguientes comandos:
+
+```bash
+npm install prop-types
+```
+
+```bash
+yarn add prop-types
+```
+
+2. Importar PropTypes en tu componente: En el componente donde deseas utilizar PropTypes, importa el módulo PropTypes de la siguiente manera:
 
 ```js
-import { animate } from '@planetaria/animaginary'
+import PropTypes from 'prop-types'
+```
 
-export function MyComponent({ open, children }) {
-  return (
-    <animate.div
-      in={open}
-      animateFrom="opacity-0 scale-95"
-      animateTo="opacity-100 scale-100"
-      duration={350}
-    >
-      {children}
-    </animate.div>
-  )
+3. Definir PropTypes para tus props: Debajo de la declaración de tu componente, puedes definir los PropTypes utilizando la sintaxis Componente.propTypes. Especifica los tipos esperados para cada prop que desees validar. Por ejemplo:
+
+```js
+import React from 'react'
+import PropTypes from 'prop-types'
+
+function MiComponente(props) {
+  // ...
+}
+
+MiComponente.propTypes = {
+  nombre: PropTypes.string.isRequired,
+  edad: PropTypes.number,
+  esActivo: PropTypes.bool.isRequired,
+  // ...
 }
 ```
 
-Animaginary is our new web animation library that redefines what you thought was possible on the web. Hand-written in optimized WASM, Animaginary can even animate the `height` property of an element at 60fps.
+En este ejemplo, hemos definido PropTypes para las props nombre, edad y esActivo en el componente MiComponente. PropTypes.string, PropTypes.number y PropTypes.bool se utilizan para validar los tipos de propiedades.
 
-## Sermone fata
+## Tipos de PropTypes
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
+PropTypes proporciona una gran variedad de validadores de tipo para tus props. A continuación, se muestra una lista de los tipos más utilizados:
 
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
+- PropTypes.array: Valida que la prop sea un array.
+- PropTypes.bool: Valida que la prop sea un booleano.
+- PropTypes.func: Valida que la prop sea una función.
+- PropTypes.number: Valida que la prop sea un número.
+- PropTypes.object: Valida que la prop sea un objeto.
+- PropTypes.string: Valida que la prop sea un string.
+- PropTypes.symbol: Valida que la prop sea un símbolo.
+- PropTypes.node: Valida que la prop sea un nodo de React.
+- PropTypes.element: Valida que la prop sea un elemento de React.
+- PropTypes.instanceOf: Valida que la prop sea una instancia de una clase.
+- PropTypes.oneOf: Valida que la prop sea uno de los valores especificados.
+- PropTypes.oneOfType: Valida que la prop sea uno de los tipos especificados.
+- PropTypes.arrayOf: Valida que la prop sea un array de un tipo específico.
+- PropTypes.objectOf: Valida que la prop sea un objeto con valores de un tipo específico.
+- PropTypes.shape: Valida que la prop sea un objeto con propiedades específicas.
+- PropTypes.any: Valida que la prop pueda ser de cualquier tipo.
 
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
-```
-
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
-
-## Lethaei Pindumve me quae dinumerat Pavor
-
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
-
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
-
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
-
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
-```
-
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.
+Espero que este artículo te haya sido de utilidad para que puedas utilizar PropTypes en tus componentes y garantizar la integridad de los datos. Si deseas conocer más sobre PropTypes, puedes consultar la documentación oficial en el siguiente enlace: https://es.reactjs.org/docs/typechecking-with-proptypes.html

@@ -1,0 +1,35 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import imgProfile from '@/images/armandev.jpg'
+
+export const meta = {
+  author: 'José Armando Pérez Pérez',
+  date: '2023-06-01',
+  title: 'Server-side Rendering (SSR)',
+  background: 'rgb(253 224 71)',
+  icon: 'nextjs',
+  description:
+    'Para comprender la importancia del server-side rendering (SSR) y cómo puede ayudarnos en casos específicos, es necesario entender el concepto de Client Side Rendering (CSR), que se utiliza ampliamente en el desarrollo de aplicaciones web.',
+  img_profile: imgProfile,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Para comprender la importancia del server-side rendering (SSR) y cómo puede ayudarnos en casos específicos, es necesario entender el concepto de Client Side Rendering (CSR), que se utiliza ampliamente en el desarrollo de aplicaciones web.
+
+El Client Side Rendering es una estrategia que consiste en generar el HTML del lado del cliente utilizando JavaScript. En esta estrategia, el navegador del cliente se encarga de solicitar los recursos necesarios, ejecutar el código JavaScript y renderizar la página final. Esto implica que la lógica de renderizado y la obtención de datos se realizan en el navegador del usuario.
+
+A continuación, analizaremos las ventajas y desventajas del Client Side Rendering:
+
+Ventajas del Client Side Rendering:
+
+1. Interactividad: El CSR permite una mayor interactividad en las aplicaciones web, ya que las actualizaciones de la interfaz de usuario se pueden realizar de forma dinámica sin necesidad de recargar la página completa.
+2. Experiencia de usuario: Al delegar el renderizado al navegador del cliente, la carga inicial de la página puede ser más rápida, ya que solo se envía un esqueleto HTML básico y luego se completa con los datos y componentes necesarios.
+3. Separación de responsabilidades: Con el CSR, el backend y el frontend pueden desarrollarse de manera independiente. El backend se centra en proporcionar APIs y servicios, mientras que el frontend se encarga del renderizado y la interacción con el usuario.
+
+Desventajas del Client Side Rendering:
+
+1. SEO: Una desventaja importante del CSR es que puede afectar la visibilidad en los motores de búsqueda. Dado que el contenido se genera dinámicamente en el navegador, los motores de búsqueda pueden tener dificultades para indexar y rastrear todo el contenido de la página.
+2. Tiempo de carga inicial: Aunque el CSR puede ofrecer una experiencia más rápida después de la carga inicial, el tiempo de carga inicial puede ser más largo, especialmente si la aplicación es compleja y requiere la descarga de una gran cantidad de código JavaScript.
+3. Accesibilidad: El CSR puede presentar desafíos en términos de accesibilidad para usuarios con dispositivos o conexiones más lentas, ya que pueden experimentar una espera más larga antes de que la página se muestre por completo.
+
+Aunque el Client Side Rendering tiene sus ventajas en términos de interactividad y experiencia de usuario, el server-side rendering (SSR) aborda algunas de las limitaciones mencionadas. El SSR consiste en generar el HTML completo en el servidor antes de enviarlo al cliente, lo que ofrece beneficios como una carga inicial más rápida y una mejor indexación en los motores de búsqueda.

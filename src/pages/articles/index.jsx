@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { IoLogoJavascript } from 'react-icons/io'
 import { FaVuejs } from 'react-icons/fa'
 import { SiReact } from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 // import { formatDate } from '@/lib/formatDate'
 
 function Article({ article }) {
@@ -14,6 +15,7 @@ function Article({ article }) {
     javascript: <IoLogoJavascript />,
     vue: <FaVuejs />,
     react: <SiReact />,
+    nextjs: <TbBrandNextjs />,
   }
   return (
     <article className="md:grid md:grid-cols-2 md:items-baseline">
@@ -64,9 +66,9 @@ export default function ArticlesIndex({ articles }) {
         intro="Si quieres contribuir con el desarrollo de la comunidad, puedes escribir un artículo y compartirlo con nosotros."
       >
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
-          {articles
-            .map((article) => <Article key={article.slug} article={article} />)
-            .slice(0, 2)}
+          {articles.map((article) => (
+            <Article key={article.slug} article={article} />
+          ))}
         </div>
       </SimpleLayout>
     </>
